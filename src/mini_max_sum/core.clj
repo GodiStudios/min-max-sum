@@ -26,4 +26,6 @@
     (reduce +)))
 
 (defn minimax [rand-vec]
-  (str (min-sum rand-vec) " " (max-sum rand-vec)))
+  (let [min (min-sum rand-vec)
+        max (max-sum rand-vec)]
+    (str min " " max)))
